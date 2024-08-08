@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Learning</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .navbar button{
+      margin-right: 30px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <h1>ReanExcel Online Learning</h1>
+    <button id="logout-button" style="display:none;" onclick="logout()">Logout</button>
+  </nav>
+
+  <!-- Login Form -->
+  <div id="login-form">
+    <h2>Login</h2>
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
+    <button onclick="login()">Login</button>
+    <p id="message"></p>
+  </div>
+
+  <!-- Main Content -->
+  <div id="main-content" style="display: none;">
+    <div id="course-list"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
